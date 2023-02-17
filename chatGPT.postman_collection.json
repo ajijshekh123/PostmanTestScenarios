@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "ae0c7b41-2c1e-44fe-8470-69df4a099159",
+		"name": "chatGPT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15294208"
+	},
+	"item": [
+		{
+			"name": "chat-request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "q",
+							"value": "10 question for chemistry  list",
+							"type": "text"
+						},
+						{
+							"key": "vrsn",
+							"value": "0.1",
+							"type": "text"
+						},
+						{
+							"key": "invoice_no",
+							"value": "inv001",
+							"type": "text"
+						},
+						{
+							"key": "package_name",
+							"value": "com.gptchat.test",
+							"type": "text"
+						},
+						{
+							"key": "plan_type",
+							"value": "weekly",
+							"type": "text"
+						},
+						{
+							"key": "response_length",
+							"value": "s",
+							"type": "text"
+						},
+						{
+							"key": "list_or_one",
+							"value": "List",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "$2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://gptchat.test/request",
+					"protocol": "http",
+					"host": [
+						"gptchat",
+						"test"
+					],
+					"path": [
+						"request"
+					],
+					"query": [
+						{
+							"key": "plan_type",
+							"value": "weekly",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "live server post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "q",
+							"value": "10 question for chemistry in list",
+							"type": "text"
+						},
+						{
+							"key": "vrsn",
+							"value": "0.1",
+							"type": "text"
+						},
+						{
+							"key": "invoice_no",
+							"value": "inv001",
+							"type": "text"
+						},
+						{
+							"key": "package_name",
+							"value": "com.gptchat.test",
+							"type": "text"
+						},
+						{
+							"key": "plan_type",
+							"value": "weekly",
+							"type": "text"
+						},
+						{
+							"key": "response_length",
+							"value": "l",
+							"type": "text"
+						},
+						{
+							"key": "List_or_One",
+							"value": "list",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://chat.eyuva.xyz/request",
+					"protocol": "http",
+					"host": [
+						"chat",
+						"eyuva",
+						"xyz"
+					],
+					"path": [
+						"request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "text to image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prompt",
+							"value": "an astronaut riding a horse on mars artstation, hd, dramatic lighting, detailed",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "512",
+							"type": "text"
+						},
+						{
+							"key": "width",
+							"value": "512",
+							"type": "text"
+						},
+						{
+							"key": "invoice_no",
+							"value": "inv001",
+							"type": "text"
+						},
+						{
+							"key": "version",
+							"value": "0.1",
+							"type": "text"
+						},
+						{
+							"key": "package_name",
+							"value": "com.gptchat.test",
+							"type": "text"
+						},
+						{
+							"key": "plan",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "plan_type",
+							"value": "weekly",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "model_id",
+							"value": "midjourney",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://gptchat.test/text-to-image",
+					"protocol": "http",
+					"host": [
+						"gptchat",
+						"test"
+					],
+					"path": [
+						"text-to-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "text to image response",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://gptchat.test/text-to-image-response/3",
+					"protocol": "http",
+					"host": [
+						"gptchat",
+						"test"
+					],
+					"path": [
+						"text-to-image-response",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "live text to image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prompt",
+							"value": "an astronaut riding a horse on mars artstation, hd, dramatic lighting, detailed",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "1024",
+							"type": "text"
+						},
+						{
+							"key": "width",
+							"value": "512",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://chat.eyuva.xyz/text-to-image",
+					"protocol": "http",
+					"host": [
+						"chat",
+						"eyuva",
+						"xyz"
+					],
+					"path": [
+						"text-to-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openAI API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"prompt\":\"Convert movie titles into 3 or more emojis. 'Man in fayoum city in egypt'\",\n    \"model\":\"text-davinci-003\",\n    \"temperature\":0.7,\n    \"max_tokens\":250,\n    \"top_p\":1,\n    \"frequency_penalty\":0,\n    \"presence_penalty\":0\n\n}"
+				},
+				"url": {
+					"raw": "https://api.openai.com/v1/completions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openai",
+						"com"
+					],
+					"path": [
+						"v1",
+						"completions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
